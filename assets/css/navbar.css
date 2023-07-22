@@ -24,7 +24,7 @@
     width: 170px;
     height: 52px;
     margin-top: 1%;
-    Margin-left: 200px;
+    margin-left: 200px;
 }
 
 .head_logo_div {
@@ -52,6 +52,7 @@
 }
 
 .head_nav ul li {
+    width: 40px;
     float: left;
     margin-right: 55px;
     cursor: pointer;

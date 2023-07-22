@@ -14,27 +14,82 @@
 </head>
 
 <body>
-    <header class="head">
-        <div class="head_logo_div">
-            <a href="https://www.xpyidc.com"><img class="logo_img" src="https://www.xpyidc.com/logo.png"></a>
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://www.xpyidc.com/logo.png" alt="Logo" width="100"
+                    height="30" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex">
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                产品
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">虚拟主机</a></li>
+                                <li><a class="dropdown-item" href="#">云服务器ECS</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">解决方案</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">代理加盟</a>
+                        </li>
+                        <li class="nav-item" style="margin:0 1rem;">
+                            <a href="/login" class="nav-link btn btn-primary" style="color: white;" role="button">登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/register" class="nav-link btn btn-outline-success" role="button">免费注册</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
-        <div class="head_nav_div">
-            <nav class="head_nav">
-                <ul id="nav_ul">
-
-                    <li><a class="bs" href="#" target="_Self">1</a></li>
-                    <li><a class="bs" href="#" target="_Self">2</a></li>
-                    <li><a class="bs" href="#" target="_Self">3</a></li>
-                    <li><a class="bs" href="#" target="_Self">4</a></li>
-                    <li><a class="bs" href="#" target="_Self">5</a></li>
-                    <li><a class="bs" href="#" target="_Self">6</a></li>
-                    <li><a class="bs" href="#" target="_Self">7</a></li>
-
-                </ul>
-            </nav>
+    </nav>
+    <div id="carousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.xpyidc.com/logo.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.xpyidc.com/logo.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.xpyidc.com/logo.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
         </div>
-    </header>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script src="assets/javascript/bootstrap.js"></script>
 </body>
 
 </html>
